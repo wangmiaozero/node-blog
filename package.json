@@ -1,0 +1,21 @@
+{
+  "name": "myblog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:pro": "cross-env NODE_ENV=production pm2 start npm --watch --name myblog -- nodemon --harmony index.js",
+    "start:dev": "cross-env NODE_ENV=development nodemon --harmony index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "wangmiao",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^5.0.0",
+    "cookie-session": "^1.4.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "multer": "^1.4.2",
+    "mysql": "^2.18.1"
+  }
+}
